@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*Mobile first*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root{
+    --fonte-1: "Comfortaa", sans serif;
+    
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color: white;
+    background-image: url(../img/foto_astronomia.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/*label{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+}*/
+header > h1{
+    text-align: center; 
+    background-color: rgba(0, 255, 255, 0.199);
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 20vh auto 5vh auto;
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: var(--fonte-1);
+    margin-top: 15vh;
+    padding: 30px 30px 35px;
+}
+input{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.644);
+}
+input#iusu{
+    /*margin-top: 40vh;*/
+    margin-bottom: 5vh;
+    padding: 10px;
+}
+input#isen{
+    padding: 10px;
+}
+
+input#login{
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgb(97, 97, 97);
+    color: white;
+}
+main{
+    
+}
+main > section > div#img{
+    
+
+    
+}
+footer{
+    display: block;
+    text-align: center;
+    margin-top: 30vh;
+}

@@ -11,7 +11,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -21,6 +21,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-y: hidden;
 
 }
 /*label{
@@ -32,20 +33,35 @@ body{
     padding: 10px;
 }*/
 header > h1{
+    /*background-image: url(../img/drawingsemfundo.png);*/
+    background-color: rgba(0, 255, 255, 0.075);
+    background-size: 80px;
     text-align: center; 
-    background-color: rgba(0, 255, 255, 0.199);
-    border-radius: 20px;
+    border-radius: 55px 35px 45px 20px;
     width: 50px;
     height: 50px;
     margin: 20vh auto 5vh auto;
     color: white;
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 70px;
     font-family: var(--fonte-1);
+    font-style: italic;
     margin-top: 15vh;
-    padding: 30px 30px 35px;
+    padding: 40px 40px 48px 30px;
+    
+}
+main{
+    background-color: rgba(0, 255, 255, 0.075);
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+
 }
 input{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
     display: block;
     margin: auto;
     border-radius: 10px;
@@ -60,6 +76,11 @@ input#iusu{
 input#isen{
     padding: 10px;
 }
+input::placeholder{
+    font-weight: bolder;
+    color: rgba(150, 150, 150, 0.719);
+}
+
 
 input#login{
     display: block;
@@ -67,22 +88,50 @@ input#login{
     height: 30px;
     width: 100px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: 20px;
     font-weight: bold;
-    background-color: rgb(97, 97, 97);
+    background-color: rgba(50, 100, 45, 0.678);
     color: white;
 }
-main{
-    
+input#login:hover{
+    background-color: rgba(216, 56, 56, 0.801);
+    cursor: pointer;
+    transition: 0.3s;
 }
-main > section > div#img{
-    
 
+div#fac{
+    background-image: url(../img/facebook-icon.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0px 0px 1px 33vh;
     
+    
+    width: 50px;
+    height: 50px;
+}
+div#github{
+    background-image: url(../img/github-icon.png);
+    background-size: 52px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: auto -10px;
+    width: 52px;
+    height: 52px;
 }
 footer{
+    color:white;
+    background-image: linear-gradient(90deg, #31a0d862, #7566b8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px;
+    margin: auto;
+    width: 50vw;
+    
+    
     display: block;
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 5vh;
 }

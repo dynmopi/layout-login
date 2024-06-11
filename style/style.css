@@ -14,7 +14,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body, html{
     background-color: white;
     background-image: url(../img/foto_astronomia.jpg);
     background-position: center center;
@@ -99,39 +99,71 @@ input#login:hover{
     cursor: pointer;
     transition: 0.3s;
 }
-
+nav{
+    background-color:rgba(0, 255, 255, 0.164);
+    border-radius: 10px;
+    
+    display: block;
+    position: absolute;
+    
+    width: 120px;
+    height: 50px;
+    
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
 div#fac{
+    /*imagem da div*/
     background-image: url(../img/facebook-icon.png);
-    background-size: 50px;
+    background-size: 48px;
     background-repeat: no-repeat;
+
     display: inline-block;
-    margin: 0px 0px 1px 33vh;
     
-    
+    /*centralização dentro do <nav>*/
+    margin-left: 13px;
+    margin-right: -10px;
+
     width: 50px;
     height: 50px;
 }
+div#fac:hover{
+    cursor: pointer;
+}
+div#github:hover{
+    cursor: pointer;
+}
 div#github{
+    /*imagem da div*/
     background-image: url(../img/github-icon.png);
     background-size: 52px;
     background-repeat: no-repeat;
+
     display: inline-block;
-    margin: auto -10px;
+
+    /*centralização dependente da div anterior*/
+
     width: 52px;
     height: 52px;
-}
+} 
 footer{
     color:white;
+
+    /*cor de fundo*/
     background-image: linear-gradient(90deg, #31a0d862, #7566b8);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
+    /*design da borda*/
     border-radius: 20px;
-    margin: auto;
     width: 50vw;
     
-    
+    /*centralização*/
     display: block;
+    position: absolute;
     text-align: center;
-    margin-top: 5vh;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, 10%);
 }

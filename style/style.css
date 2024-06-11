@@ -2,6 +2,20 @@
 
 /*Mobile first*/
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+/*
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
 
 :root{
     --fonte-1: "Comfortaa", sans serif;
@@ -124,14 +138,24 @@ div#fac{
     margin-left: 13px;
     margin-right: -10px;
 
-    width: 50px;
+    width: 46px;
     height: 50px;
 }
 div#fac:hover{
     cursor: pointer;
+    position: sticky;
+
+    transition: 1s;
+    width: 48px;
+    height: 58px;
+
 }
 div#github:hover{
     cursor: pointer;
+    
+    transition: 1s;
+    width: 48px;
+    height: 58px;
 }
 div#github{
     /*imagem da div*/
@@ -157,7 +181,7 @@ footer{
 
     /*design da borda*/
     border-radius: 20px;
-    width: 50vw;
+    width: 450px;
     
     /*centralização*/
     display: block;

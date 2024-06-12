@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*media queries*/
+
+/*Typical Device Breakpoints
+----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+:root{
+    --fonte-1: "Confortaa, sans serif";
+}
+
+@media screen and (min-width: 768px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html, body{
+        height: 100vh;
+        background-image: none;
+        background-attachment: fixed;
+        background-color: #353647;
+    }
+
+    header > h1{
+        /*background-image: url(../img/drawingsemfundo.png);
+        background-color: rgba(0, 255, 255, 0.075);
+        background-size: 80px;
+        text-align: center; 
+        border-radius: 55px 35px 45px 20px;
+        width: 50px;
+        height: 50px;
+        margin: 20vh auto 5vh auto;
+        color: white;
+        font-weight: bolder;
+        font-size: 70px;
+        font-family: var(--fonte-1);
+        font-style: italic;
+        margin-top: 15vh;
+        padding: 40px 40px 48px 30px;*/
+
+        display: block;
+        margin-right: 100px;
+    }
+    .conteiner{
+        background-color: rgba(247, 247, 247, 0.445);
+        display: block;
+        position: absolute;
+        left: 50%;
+        top:47%;
+        
+        transform: translate(-50%, -50%);
+      
+        width: 760px;
+        height: 320px;
+        
+        padding: 100px 100px 100px 100px;
+        border-radius: 10px;
+    }
+    main{
+    /*  background-color: rgba(0, 255, 255, 0.075);
+        display: block;
+        margin: auto;
+        padding: 20px;
+        width: 200px;
+        border-radius: 10px;
+
+        margin-right: 70%;
+        margin-top: 10%;
+*/   
+        position: absolute;
+        top: 33%;
+        left: 25%;
+    }
+    
+    nav{
+        /*background-color:rgba(0, 255, 255, 0.164);
+        border-radius: 10px;
+    
+        display: block;
+        position: absolute;
+    
+        width: 120px;
+        height: 50px;
+    
+        left: 50%;
+        transform: translate(-50%, 30%);*/
+        display: none;
+        transform: translate(-50%, 50%);
+    }
+    
+}

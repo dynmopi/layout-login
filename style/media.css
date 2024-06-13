@@ -15,6 +15,7 @@ Grandes telas: acima de 1200px
 }
 
 @media screen and (min-width: 768px){
+
     *{
         margin: 0px;
         padding: 0px;
@@ -26,7 +27,7 @@ Grandes telas: acima de 1200px
         height: 100vh;
         background-image: none;
         background-attachment: fixed;
-        background-color: #353647;
+        background-color: #010416;
     }
 
     header > h1{
@@ -46,26 +47,57 @@ Grandes telas: acima de 1200px
         margin-top: 15vh;
         padding: 40px 40px 48px 30px;*/
 
+
+        background-color: rgba(1, 27, 27, 0.452);
         display: block;
+        top: 15%;
+        left: 72.5%;
+        position: fixed; /*solucao encontrada para sobreposição do background .divisao*/
         margin-right: 100px;
     }
+
+    .divisao{
+        background-image: url("../img/foto_astronomia.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        width: 62.2%;
+        height: 520px;
+
+        border-radius: 0px 10px 10px 0px;
+
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        left: 50%;
+        bottom: 31.3%;
+    }
+
+    /*para telas grandes*/
     .conteiner{
-        background-color: rgba(247, 247, 247, 0.445);
+        
+        background-color: #00030f;
         display: block;
         position: absolute;
         left: 50%;
         top:47%;
         
         transform: translate(-50%, -50%);
+        
       
-        width: 760px;
+        /*width: 740px;*/
+        width: 60vw;
         height: 320px;
         
-        padding: 100px 100px 100px 100px;
+        padding: 100px 50px 100px 100px;
         border-radius: 10px;
     }
+
     main{
-    /*  background-color: rgba(0, 255, 255, 0.075);
+    /*  formulário
+        background-color: rgba(0, 255, 255, 0.075);
         display: block;
         margin: auto;
         padding: 20px;
@@ -74,14 +106,18 @@ Grandes telas: acima de 1200px
 
         margin-right: 70%;
         margin-top: 10%;
-*/   
+    */
+
+        background-color: rgba(1, 27, 27, 0.452);
         position: absolute;
         top: 33%;
-        left: 25%;
+        left: 15%;
     }
-    
-    nav{
-        /*background-color:rgba(0, 255, 255, 0.164);
+
+    /*inputs apenas no mobile first*/
+
+    nav#nav_grande{
+        background-color:rgba(1, 27, 27, 0.452);
         border-radius: 10px;
     
         display: block;
@@ -90,10 +126,42 @@ Grandes telas: acima de 1200px
         width: 120px;
         height: 50px;
     
+        
+        top: 100%;
         left: 50%;
-        transform: translate(-50%, 30%);*/
-        display: none;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, 30%);
+
+        display: block;
+        /*transform: translate(-50%, 50%);*/
+    }
+
+    footer{
+        /*
+        color:white;
+        */
+    
+        /*cor de fundo
+        background-image: linear-gradient(90deg, rgb(1, 71, 71), rgb(0, 29, 29));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    
+        /*design da borda
+        border-radius: 20px;
+        width: 450px;
+        
+        /*centralização
+        display: block;
+        position: absolute;
+        text-align: center;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, 10%);*/
+
+        /*design da borda*/
+        background-image: linear-gradient(90deg, rgb(3, 36, 36), rgb(0, 15, 15));
+        border-radius: 5px 20px 10px 20px;
+        width: 300px;
     }
     
 }

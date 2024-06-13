@@ -38,6 +38,7 @@ body, html{
     overflow-y: hidden;
 
 }
+
 /*label{
     display: block;
     margin: auto;
@@ -46,6 +47,7 @@ body, html{
     color: white;
     padding: 10px;
 }*/
+
 header > h1{
     /*background-image: url(../img/drawingsemfundo.png);*/
     background-color: rgba(0, 255, 255, 0.075);
@@ -64,6 +66,7 @@ header > h1{
     padding: 40px 40px 48px 30px;
     
 }
+
 main{
     background-color: rgba(0, 255, 255, 0.075);
     display: block;
@@ -73,6 +76,7 @@ main{
     border-radius: 10px;
 
 }
+
 input{
     background-color: rgba(0, 0, 0, 0.521);
     color: white;
@@ -105,11 +109,11 @@ input#login{
     margin-top: 20px;
     border-radius: 20px;
     font-weight: bold;
-    background-color: rgba(50, 100, 45, 0.678);
+    background-color: rgba(90, 141, 85, 0.555);
     color: white;
 }
 input#login:hover{
-    background-color: rgba(216, 56, 56, 0.801);
+    background-color: rgba(216, 56, 56, 0.479);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -126,6 +130,12 @@ nav{
     left: 50%;
     transform: translate(-50%, 30%);
 }
+/*serve para ocultar a nav do media para o mbfirst (erro técnico)*/
+nav#nav_grande{
+    display: none;
+
+}
+
 div#fac{
     /*imagem da div*/
     background-image: url(../img/facebook-icon.png);
@@ -180,8 +190,8 @@ footer{
     background-size: cover;
 
     /*design da borda*/
-    border-radius: 20px;
-    width: 450px;
+    border-radius: 5px 20px 10px 20px;
+    width: 380px;
     
     /*centralização*/
     display: block;
